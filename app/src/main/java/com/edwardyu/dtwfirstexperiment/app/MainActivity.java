@@ -48,9 +48,15 @@ public class MainActivity extends ActionBarActivity {
                     JSONArray jsonArray = Network.sendSQLExpectJSONArray(
                             "SELECT * FROM `asensor` WHERE `description` = \""+ description +"\";\n");
                     logJSONArray(description, jsonArray);
+                    // TODO think about whether hashtable actually neccesary here
                     if (jsonArray != null) {
                         jsonArrayHashtable.put(description, jsonArray);
                     }
+                    // TODO parse JSONArray for JSONObjects, then parse for time (long) and data (3axis) to put in collection per run
+
+                    // TODO sort collection by time
+
+                    // TODO create TimeSeries to use with JavaML library's DTW algo
                 }
 
             }
