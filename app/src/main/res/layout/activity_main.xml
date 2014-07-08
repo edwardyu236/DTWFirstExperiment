@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.edwardyu.dtwfirstexperiment.app.MainActivity">
+
+    <TextView
+        android:text="Pick a template:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/templateText" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/templateText"
+        android:id="@+id/templateButtonGroup"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gesture 1"
+            android:id="@+id/gesture1TemplateButton" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gesture 2"
+            android:id="@+id/gesture2TemplateButton" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gesture 3"
+            android:id="@+id/gesture3TemplateButton" />
+    </RadioGroup>
+
+    <TextView
+        android:text="Pick a sample:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/sampleText"
+        android:layout_below="@+id/templateButtonGroup"/>
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/sampleText"
+        android:id="@+id/sampleButtonGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gesture 1 Sample 1"
+            android:id="@+id/gesture1Sample1Button" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gesture 1 Sample 2"
+            android:id="@+id/gesture1Sample2Button" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gesture 1 Sample 3"
+            android:id="@+id/gesture1Sample3Button" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gesture 1 Sample 4"
+            android:id="@+id/gesture1Sample4Button" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Gesture 2 Sample 1"
+            android:id="@+id/gesture2Sample1Button" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gesture 2 Sample 2"
+            android:id="@+id/gesture2Sample2Button" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gesture 2 Sample 3"
+            android:id="@+id/gesture2Sample3Button" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gesture 2 Sample 4"
+            android:id="@+id/gesture2Sample4Button" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Gesture 3 Sample 1"
+            android:id="@+id/gesture3Sample1Button" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gesture 3 Sample 2"
+            android:id="@+id/gesture3Sample2Button" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gesture 3 Sample 3"
+            android:id="@+id/gesture3Sample3Button" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gesture 3 Sample 4"
+            android:id="@+id/gesture3Sample4Button" />
+
+    </RadioGroup>
+
+</RelativeLayout>
